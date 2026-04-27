@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Molinos del Viento</title>
+    <link rel="stylesheet" href="../css/catalogo.css">
+</head>
+<body>
+
+    <a class="volver-inicio" href="../main.html">← Volver a la página principal</a>
+
+    <main class="catalogo">
+        <div class="catalogo-inner">
+            <div class="catalogo-header">
+                <img src="../assets/molino_logo.png" alt="Logo Molino" class="catalogo-logo">
+                <p class="catalogo-subtitulo">Catálogo Oficial</p>
+                <h1>Nuestros Alfajores</h1>
+                <p>Descubrí sabores, ofertas y packs especiales. Elegí tu favorito y llevate lo mejor de Esquel a casa.</p>
+            </div>
+            
+            <div class="cart-widget">
+                <button class="cart-toggle" id="cartButton" type="button">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <div class="cart-dropdown" id="cartDropdown" aria-hidden="true">
+                    <div class="cart-dropdown-header">
+                        <span>Mi carrito</span>
+                        <button class="cart-close" id="cartClose" type="button">×</button>
+                    </div>
+                    <ul class="cart-items" id="cartItems"></ul>
+                    <div class="cart-footer">
+                        <span class="cart-total" id="cartTotal">Total: $0,00</span>
+                        <a class="checkout-btn" href="#" id="checkoutBtn">Ir al pago</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aca se insertan los productos-->
+            <div class="catalogo-grid">
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/alfajor_helado.png" alt="Alfajor de Chocolate Negro Caja x 18 Un">
+                    <div class="producto-info">
+                        <h2>Alfajor de Chocolate Negro Caja x 18 Un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$14.800,00</span>
+                            <span class="precio-anterior">$24.999,00</span>
+                        </div>
+                        <p class="precio-texto">$14.060,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de Chocolate Negro Caja x 18 Un" data-price="14800">COMPRAR</a>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/alfajor_helado.png" alt="Alfajor de Chocolate Negro Caja x 18 Un">
+                    <div class="producto-info">
+                        <h2>Alfajor de Chocolate Negro Caja x 1 Un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$6.800,00</span>
+                            <span class="precio-anterior">$7.999,00</span>
+                        </div>
+                        <p class="precio-texto">$6.060,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de Chocolate Negro Caja x 1 Un" data-price="6800">COMPRAR</a>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/8_unidades.png" alt="Alfajor de Chocolate Blanco Caja x 18 Un">
+                    <div class="producto-info">
+                        <h2>Alfajor de Chocolate Blanco Caja x 18 Un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$14.800,00</span>
+                            <span class="precio-anterior">$24.000,00</span>
+                        </div>
+                        <p class="precio-texto">$14.060,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de Chocolate Blanco Caja x 18 Un" data-price="14800">COMPRAR</a>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/gin_naranja.png" alt="Alfajor de Gin Naranja 100g - Caja x 14 un">
+                    <div class="producto-info">
+                        <h2>Alfajor de Gin Naranja 100g - Caja x 14 un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$14.500,00</span>
+                            <span class="precio-anterior">$25.000,00</span>
+                        </div>
+                        <p class="precio-texto">$13.775,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de Gin Naranja 100g - Caja x 14 un" data-price="14500">COMPRAR</a>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/merengue.png" alt="Alfajor de Merengue 100g - Caja x 14 un">
+                    <div class="producto-info">
+                        <h2>Alfajor de Merengue 100g - Caja x 14 un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$14.500,00</span>
+                            <span class="precio-anterior">$26.000,00</span>
+                        </div>
+                        <p class="precio-texto">$13.775,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de Merengue 100g - Caja x 14 un" data-price="14500">COMPRAR</a>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/choco_blanco_cacao.png" alt="Alfajor de Chocolate Blanco Caja x 18 Un">
+                    <div class="producto-info">
+                        <h2>Alfajor de Chocolate Blanco x 1 Un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$5.800,00</span>
+                            <span class="precio-anterior">$7.000,00</span>
+                        </div>
+                        <p class="precio-texto">$4.200,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de Chocolate Blanco Caja x 1 Un" data-price="5800 ">COMPRAR</a>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/dulce_de_leche.png" alt="Alfajor de Dulce de Leche 100g - Caja x 14 un">
+                    <div class="producto-info">
+                        <h2>Alfajor de Dulce de Leche 100g x 1 un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$4.500,00</span>
+                            <span class="precio-anterior">$6.000,00</span>
+                        </div>
+                        <p class="precio-texto">$4.000,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de Dulce de Leche 100g - Caja x 1 un" data-price="4500">COMPRAR</a>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <img src="../assets/assets_alfajores/frambuesa_chocolate_blanco.png" alt="Alfajor de frambuesa 100g - Caja x 14 un">
+                    <div class="producto-info">
+                        <h2>Alfajor de frambuesa de Chocolate Blanco 100g x 1 Un</h2>
+                        <div class="precios">
+                            <span class="precio-oferta">$3.500,00</span>
+                            <span class="precio-anterior">$5.000,00</span>
+                        </div>
+                        <p class="precio-texto">$3.000,00 con Transferencia o depósito</p>
+                        <a class="boton-catalogo" href="#" data-name="Alfajor de frambuesa 100g 1 Unidad" data-price="3500">COMPRAR</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Our Alfajor. All rights reserved.</p>
+    </footer>
+
+
+    <script src="../js/catalogo.js"></script>
+</body>
+</html>
+
+
+

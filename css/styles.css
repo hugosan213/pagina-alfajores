@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-darkWine: #6f1d1b;
+  --color-camel: #bb9457;
+  --color-darkCoffee: #1f1007;
+  --color-chocolateBrown: #99582a;
+  --color-whitey: #ffffff;
+  --color-white:#fdfbf49a;
+  --color-pink: #ff5d90;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--color-white);
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 5px;
+  background: #ff5d90;
+}
+
+.navbar img {
+  height: 80px;
+  object-fit: contain;
+}
+.navbar a {
+  color: var(--color-whitey);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer {
+    background-color: #db396c;
+    color: var(--color-whitey);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0;
+}
+/* --- Ajustes para pantallas de menos de 768px --- */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 15px; /* Reducimos el espacio exagerado de 100px */
+        height: auto; /* Dejamos que la altura crezca si los links bajan */
+        flex-wrap: wrap; /* Si no entran los links, pasan a la fila de abajo */
+        padding: 15px 5px;
+    }
+
+    .navbar img {
+        height: 40px; /* Logo más chico para que no ocupe toda la pantalla */
+    }
+
+    .navbar a {
+        font-size: 15px; /* Fuente un poco más pequeña */
+    }
+
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Esto mata cualquier scroll lateral rebelde */
+    margin: 0;
+    padding: 0;
+}
+}

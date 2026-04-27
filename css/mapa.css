@@ -1,0 +1,84 @@
+
+.contenedor {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 100px;
+  font-family: 'Poppins', Arial;
+  background-color: var(--color-pink);
+}
+
+.texto-horarios p {
+  max-width: 250px;
+  color: #ffff !important;
+}
+
+
+.texto-paginas a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 5px;
+  color: white !important;
+}
+
+.texto-paginas a:hover {
+   color: #ee724c; 
+}
+
+
+/* LOGO */
+.logo img {
+  width: 200px; /* ajustá tamaño */
+  height: auto;
+}
+
+.texto-contacto i {
+  margin-right: 10px;
+  color: var(--color-lightApicot); 
+}
+
+/* Estilos para los enlaces de contacto */
+
+.texto-contacto a {
+  text-decoration: none;
+  color: inherit;
+  color: white ;
+}
+
+.texto-contacto a:hover {
+  color: var(--color-lightApicot); /* efecto hover para el texto*/
+}
+
+.contenedor h1 {
+  color: #ffff;
+} 
+
+.contenedor p {
+  color: #fcee2f;
+}
+
+.mapa {
+  border: 0;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* Apila el logo, los datos y el mapa uno debajo del otro */
+        gap: 40px; 
+        padding: 40px 20px;
+        margin-top: 50px;
+        text-align: center; 
+    }
+
+    .texto-horarios p, 
+    .texto-contacto p {
+        max-width: 100%; 
+    }
+
+    .mapa iframe {
+        width: 100% !important; 
+        height: 300px;
+    }
+}

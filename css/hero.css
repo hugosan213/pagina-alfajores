@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --marron-oscuro: #3e2723;
+    --marron-medio: #6d4c41;
+    --naranja: #ff5d90;
+    --crema: #f5f0e6;
+
+}
+
+.seccion-hero {
+
+    position: relative;
+    height: 100vh;
+    background: url("../assets/ALFAJOR_GRANDE.png") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+
+}
+
+.capa-oscura {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    );
+    top: 0;
+    left: 0;
+
+}
+
+.contenido-hero {
+
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+
+}
+
+.seccion-hero h1 {
+
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.seccion-hero p {
+
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+    color: #ddd;
+
+}
+
+.contenedor-botones {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+}
+
+.boton-principal {
+
+    background: var(--naranja);
+    border: none;
+    padding: 16px 32px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+
+.boton-principal:hover {
+
+    background: #fd2267;
+
+}
+
+.boton-secundario {
+
+    background: transparent;
+    border: 2px solid white;
+    padding: 16px 32px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.boton-secundario:hover {
+
+    background: white;
+    color: black;
+
+}
+
+.estadisticas {
+
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+
+}
+
+.item-estadistica h2 {
+
+    font-size: 2.5rem;
+    color: #ffca28;
+
+}
+
+.item-estadistica span {
+
+    font-size: 0.9rem;
+    color: #ddd;
+
+}
+
+@media (max-width: 768px) {
+    .seccion-hero { /* Cambiado de #seccion-hero a .seccion-hero para coincidir con tu clase */
+        height: auto; 
+        padding: 100px 20px 60px; /* Más espacio arriba para que el logo no tape el texto */
+    }
+
+    .seccion-hero h1 {
+        font-size: 2.2rem; 
+    }
+
+    /* Ajuste para los botones que se pisaban */
+    .contenedor-botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Ajuste para las estadísticas (15+, 50+, 1000+) */
+    .estadisticas {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .contenido-hero {
+        width: 100%; /* Asegura que no se pase del ancho del celular */
+        max-width: 100vw; 
+        padding: 0 15px; /* Margen interno para que el texto no toque el borde */
+        margin: 0 auto;
+    }
+}

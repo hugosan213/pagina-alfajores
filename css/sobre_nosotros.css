@@ -1,0 +1,100 @@
+
+.contenido {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.contenido {
+    /* background: url('../assets/quienes_somos_alfajor.png') no-repeat center center; */
+  background-size: cover;
+}
+
+.texto_local {
+  width: 38%;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #ffff;
+  border-radius: 28px;
+  border: 2px solid var(--color-whitey);
+}
+.texto_local h2 {
+    font-size: 3rem;
+    color: var(--color-pink);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.texto_local p {
+    font-size: 1.5rem;
+    color: var(--color-lightApicot);
+    padding: 20px;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+  animation-play-state: paused;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.imagen_local {
+  position: fixed;
+  right: -10%;
+  top: 50%;
+
+  width: 50%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen_local img {
+  max-width: 100%;
+  height: 120%;
+  border-radius: 28px;
+}
+
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .texto_local {
+        width: 90%; /* Ahora el cuadro ocupa casi todo el ancho del celular */
+        min-height: auto;
+        padding: 20px;
+        margin: 20px;
+        margin-bottom: 20px;
+    }
+
+    .imagen_local {
+        display: none;
+    }
+
+    .texto_local h2 {
+        font-size: 1.8rem; /* Título un poco más pequeño para que no se corte */
+        text-align: center;
+    }
+
+    .texto_local p {
+        font-size: 1.1rem; /* Tamaño de letra cómodo para lectura móvil */
+        line-height: 1.4;
+    }
+}
